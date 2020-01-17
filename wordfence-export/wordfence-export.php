@@ -69,7 +69,7 @@ function wfex_export() {
 function wfex_exportLiveTraffic() {
 	// Live Traffic
 	global $wpdb;
-	$table = $wpdb->base_prefix . 'wfHits';
+	$table = $wpdb->base_prefix . 'wfhits';
 	
 	$myrows = $wpdb->get_results( "SELECT * FROM ".$table." ORDER BY ctime DESC" );
 
@@ -90,7 +90,7 @@ function wfex_exportLiveTraffic() {
 function wfex_exportLogins() {
 	// Logins
 	global $wpdb;
-	$table = $wpdb->base_prefix . 'wfLogins';
+	$table = $wpdb->base_prefix . 'wflogins';
 	
 	$myrows = $wpdb->get_results( "SELECT * FROM ".$table." ORDER BY ctime DESC" );
 
